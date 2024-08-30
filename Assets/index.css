@@ -1,0 +1,93 @@
+html,
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: blanchedalmond;
+}
+body,
+header,
+p,
+h2,
+footer {
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0;
+}
+
+#headertop {
+  display: flex;
+  align-items: center; /* Vertically aligns the items in the center */
+  justify-content: space-between; /* Adjusts spacing between logo and breadcrumbs */
+  padding: 0;
+}
+nav a {
+  margin: 0 10px;
+}
+
+.animate {
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+h1,
+#Reasons {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+}
+
+.flex {
+  display: flex;
+  align-items: stretch;
+  gap: 41px;
+  margin-bottom: 24px;
+
+
+}
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+#button {
+  color: white;
+}
+
+/* .flex-item1 {
+    flex-grow: 1;
+}
+.flex-item2 {
+    flex-grow: 1;
+} */
+
+/* .responsive image {
+    min-height: 400px;
+} */
