@@ -11,7 +11,7 @@ header,
 p,
 h2 {
   margin: 0 auto;
-  max-width: 900px;
+  /* max-width: 900px; */
   padding: 0;
 }
 
@@ -48,19 +48,53 @@ nav a {
 picture img {
   max-width: 100%;
   height: auto;
-  width: 200px;
-  /* was 200px */
   min-height: 200px;
-  max-height: 200px;
+  
 }
 video {
   max-width: 100%;
-  min-height: 200px;
-  max-height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: antiquewhite;
 }
 
-/* Additional styling for the figure and caption */
+@media (max-width: 500px) {
+    video {
+      width: 200px;
+      height: 200px;
+      
+    }
+}
+
+@media (min-width: 1300px) {
+    video {
+      width: 600px;
+      height: 600px;
+      
+    }
+}
+iframe {
+    max-width: 100%;
+    width: 400px;
+    height: 400px;
+  }
+  
+  @media (max-width: 500px) {
+      iframe {
+        width: 200px;
+        height: 200px;
+        
+      }
+  }
+  
+  @media (min-width: 1300px) {
+      iframe {
+        width: 600px;
+        height: 600px;
+        
+      }
+  }
+
 figure {
   align-items: center;
   margin: 20px auto;
@@ -73,6 +107,5 @@ figcaption {
   margin-top: 10px;
   align-items: center;
   border-radius: 5px;
-  /* margin: 10px; */
   padding: 0.5%;
 }
